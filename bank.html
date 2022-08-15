@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-5xl text-center mt-6">
+        Today's Hiseb Nikas at
+        <span class="text-amber-500 font-bold">Baper Bank!</span>
+      </h1>
+    </header>
+    <main>
+      <section>
+        <div class="grid grid-cols-3 gap-4">
+          <div class="bg-green-200 p-8 m-5 text-center rounded-lg">
+            <h4 class="text-xl">Deposit</h4>
+            <h2 class="text-4xl">$00</h2>
+          </div>
+          <div class="bg-red-200 p-8 m-5 text-center rounded-lg">
+            <h4>Withdraw</h4>
+            <h2 class="text-4xl">$00</h2>
+          </div>
+          <div class="bg-green-500 p-8 m-5 text-center rounded-lg">
+            <h4>Balance</h4>
+            <h2 class="text-4xl">$1200</h2>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-green-400 p-8 m-5 r rounded-lg">
+            <h3 class="text-2xl">Add Money:</h3>
+            <input
+              type="number"
+              class="rounded-lg w-9/12 block mt-5 px-2"
+              placeholder="Amount You want to deposite"
+            />
+            <button
+              class="bg-green-500 block px-5 py-2 rounded-lg m-5 hover:bg-green-600"
+            >
+              Deposite
+            </button>
+          </div>
+          <div class="bg-red-400 p-8 m-5 r rounded-lg">
+            <h3 class="text-2xl">Take Money:</h3>
+            <input
+              type="number"
+              class="rounded-lg w-9/12 block mt-5 px-2"
+              placeholder="Amount You want to take"
+            />
+            <button
+              class="bg-red-500 block px-5 py-2 rounded-lg m-5 hover:bg-red-600"
+            >
+              Withdraw
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
