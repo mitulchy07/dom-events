@@ -19,11 +19,11 @@
         <div class="grid grid-cols-3 gap-4">
           <div class="bg-green-200 p-8 m-5 text-center rounded-lg">
             <h4 class="text-xl">Deposit</h4>
-            <h2 class="text-4xl">$00</h2>
+            <h2 class="text-4xl">$ <span id="deposite-display"> 00</span></h2>
           </div>
           <div class="bg-red-200 p-8 m-5 text-center rounded-lg">
             <h4>Withdraw</h4>
-            <h2 class="text-4xl">$00</h2>
+            <h2 class="text-4xl">$ <span id="withdraw-display">00</span></h2>
           </div>
           <div class="bg-green-500 p-8 m-5 text-center rounded-lg">
             <h4>Balance</h4>
@@ -35,10 +35,12 @@
             <h3 class="text-2xl">Add Money:</h3>
             <input
               type="number"
+              id="deposite-input"
               class="rounded-lg w-9/12 block mt-5 px-2"
               placeholder="Amount You want to deposite"
             />
             <button
+              id="deposite-button"
               class="bg-green-500 block px-5 py-2 rounded-lg m-5 hover:bg-green-600"
             >
               Deposite
@@ -47,11 +49,13 @@
           <div class="bg-red-400 p-8 m-5 r rounded-lg">
             <h3 class="text-2xl">Take Money:</h3>
             <input
-              type="number"
+              id="withdraw-input"
+              type="text"
               class="rounded-lg w-9/12 block mt-5 px-2"
               placeholder="Amount You want to take"
             />
             <button
+              id="withdraw-button"
               class="bg-red-500 block px-5 py-2 rounded-lg m-5 hover:bg-red-600"
             >
               Withdraw
@@ -60,6 +64,6 @@
         </div>
       </section>
     </main>
-    <script src="js/script.js"></script>
+    <script src="js/bank.js"></script>
   </body>
 </html>
