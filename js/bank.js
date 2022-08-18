@@ -8,6 +8,7 @@ document.getElementById('deposite-button').addEventListener('click', function(){
     const depositeInput = document.getElementById('deposite-input');
     const deposite = depositeInput.value;
     const newDeposite = parseFloat(deposite);
+    depositeInput.value = '';
     const depositeDisplay = document.getElementById('deposite-display');
     const newDepositeDisplay = depositeDisplay.innerText;
     const currentDepositeDisplay = parseFloat(newDepositeDisplay);
@@ -25,6 +26,7 @@ document.getElementById('withdraw-button').addEventListener('click', function(){
      const withdrawInput = document.getElementById('withdraw-input');
     const withdraw = withdrawInput.value; 
     const newWithdraw = parseFloat(withdraw); 
+    withdrawInput.value = '';
     if(displayBalance < newWithdraw){
         alert('Balance Low!!!');
         return;
